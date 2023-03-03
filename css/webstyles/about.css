@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Clicker+Script&family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+
+.section .container {
+    padding-top: 50px;
+    padding-bottom: 70px;
+}
+
+.about-section-title {
+    max-width: 100%;
+    flex: 0 0 100%;
+    background-color: red;    
+}
+
+.about-section-title h2 {
+    font-size: 22px;
+}
