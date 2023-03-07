@@ -1,17 +1,149 @@
-@import url('https://fonts.googleapis.com/css2?family=Clicker+Script&family=Poppins:wght@200;300;400;500;600;700&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Clicker+Script&family=Poppins:wght@200;300;400;500;600;700&display=swap");
 
 .section .container {
-    padding-top: 50px;
-    padding-bottom: 70px;
+  padding-top: 50px;
+  padding-bottom: 70px;
 }
 
 .about-section-title {
-    max-width: 100%;
-    flex: 0 0 100%;
-    background-color: red;    
+  max-width: 100%;
+  flex: 100%;
+  margin-bottom: 50px;
 }
 
 .about-section-title h2 {
-    font-size: 22px;
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--text-black-900);
+  position: relative;
+}
+
+.about-section-title h2::before {
+  content: "";
+  width: 50px;
+  height: 4px;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  border-radius: 5px;
+  background-color: var(--skin-color);
+}
+
+.about-section-title h2::after {
+  content: "";
+  width: 25px;
+  height: 4px;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  margin-top: 10px;
+  border-radius: 5px;
+  background-color: var(--skin-color);
+}
+
+.about-me-content {
+  max-width: 100%;
+  flex: 100%;
+}
+
+.about-me-content .about-me-text {
+  flex: 100%;
+  max-width: 100%;
+}
+
+.about-me-content .about-me-text h3 {
+  font-size: 24px;
+  color: var(--text-black-900);
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.about-me-content .about-me-text h3 span {
+  color: var(--skin-color);
+}
+
+.about-me-content .about-me-text p {
+  font-size: 16px;
+  color: var(--text-black-700);
+  line-height: 30px;
+}
+
+.p-1,
+.p-2,
+.p-3,
+.p-4 {
+  margin-bottom: 10px;
+}
+
+.about-me-content .profile {
+  max-width: 65%;
+  flex: 65%;
+  margin-top: 20px;
+}
+
+.profile .profile-info {
+  flex: 50%;
+  max-width: 50%;
+}
+
+.profile .profile-info p {
+  padding: 5px 0;
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 16px;
+  color: var(--text-black-900);
+  border-bottom: 1px solid var(--bg-black-50);
+}
+
+.profile .profile-info span {
+  display: inline-block;
+  color: var(--text-black-700);
+  font-weight: 400;
+}
+
+.profile .buttons {
+  margin-top: 30px;
+}
+
+.profile .buttons .btn {
+  margin-right: 40px;
+}
+
+.about-me-content .skills {
+  max-width: 40%;
+  flex: 35%;
+  margin-top: 20px;
+}
+
+.about-me-content .skills .skill-list {
+  flex: 100%;
+  max-width: 100%;
+}
+
+.about-me-content .skills .skill-list h4 {
+  font-size: 16px;
+  text-transform: capitalize;
+  line-height: 35px;
+  color: var(--text-black-900);
+}
+
+.about-me-content .skills .skill-list {
+  margin-bottom: 30px;
+}
+
+.about-me-content .skills .skill-list .progress {
+  height: 7px;
+  width: 100%;
+  border-radius: 4px;
+  color: var(--bg-black-50);
+  position: relative;
+}
+
+.about-me-content .skills .skill-list .progress .progress-in {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 4px;    
+  height: 100%;
+  color: var(--skin-color);
 }
