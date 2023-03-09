@@ -5,20 +5,20 @@
   padding-bottom: 70px;
 }
 
-.about-section-title {
+.section-title {
   max-width: 100%;
   flex: 100%;
   margin-bottom: 50px;
 }
 
-.about-section-title h2 {
+.section-title h2 {
   font-size: 28px;
   font-weight: 700;
   color: var(--text-black-900);
   position: relative;
 }
 
-.about-section-title h2::before {
+.section-title h2::before {
   content: "";
   width: 50px;
   height: 4px;
@@ -29,7 +29,7 @@
   background-color: var(--skin-color);
 }
 
-.about-section-title h2::after {
+.section-title h2::after {
   content: "";
   width: 25px;
   height: 4px;
@@ -66,19 +66,20 @@
   font-size: 16px;
   color: var(--text-black-700);
   line-height: 30px;
+  text-align: justify;
 }
 
 .p-1,
 .p-2,
 .p-3,
 .p-4 {
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 .about-me-content .profile {
   max-width: 65%;
   flex: 65%;
-  margin-top: 20px;
+  margin-top: 40px;
 }
 
 .profile .profile-info {
@@ -128,14 +129,14 @@
 }
 
 .about-me-content .skills .skill-list {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 .about-me-content .skills .skill-list .progress {
   height: 7px;
   width: 100%;
   border-radius: 4px;
-  color: var(--bg-black-50);
+  background-color: var(--bg-black-50);
   position: relative;
 }
 
@@ -143,7 +144,110 @@
   position: absolute;
   top: 0;
   left: 0;
-  border-radius: 4px;    
   height: 100%;
-  color: var(--skin-color);
+  border-radius: 4px;
+  background-color: var(--skin-color);
 }
+
+.about-me-content .skills .skill-list .progress .skill-percent {
+  position: absolute;
+  top: -40px;
+  right: 0;
+  font-weight: 400;
+  line-height: 40px;
+  color: var(--text-black-900);
+}
+
+.about-me-content .education, 
+.about-me-content .experience {
+  max-width: 50%;
+  flex: 50%;
+  margin-top: 40px;
+}
+
+.about-me-content h3.title {
+    color: var(--text-black-900);
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.about-me-content .e-info-box {
+  flex: 100%;
+  max-width: 100%;
+}
+
+.about-me-content .e-info {
+  position: relative;
+  padding: 30px 15px;
+  width: 100%;
+  border: 1px solid var(--bg-black-50);
+  border-radius: 10px;
+  background-color: var(--bg-black-100);
+  
+}
+
+.dark-box-shadow {
+  box-shadow: 0 0 20px rgba(45, 40, 75, 0.15);
+}
+
+.about-me-content .e-list {
+    padding-left: 40px;
+    padding-bottom: 30px;
+    position: relative;
+}
+
+.about-me-content .e-list:last-child {
+  padding-bottom: 0;
+}
+
+.about-me-content .e-list::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 10px;
+  height: 100%;
+  width: 1.5px;
+  background-color: var(--skin-color);
+}
+
+.about-me-content .e-list .circle-dot {
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  top: 0;
+  left: 3px;
+  background-color: var(--skin-color);
+  border-radius: 50%;
+}
+
+.about-me-content .e-list .e-date {
+  font-size: 16px;
+  font-weight: 500;  
+  margin-bottom: 10px;
+  color: var(--text-black-700);
+}
+
+.about-me-content .e-list .e-date .fa-calendar {
+  margin-right: 15px; 
+}
+
+.about-me-content .education .e-list .e-title {
+  text-transform: capitalize;
+  margin-bottom: 5px;
+  font-weight: 600;
+  color: var(--text-black-900);
+}
+
+.e-title, .e-text {
+  color: var(--text-black-700);
+  text-transform: capitalize;
+}
+
+.e-title {
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+
+
