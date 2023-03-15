@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Clicker+Script&family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+.service .service-item {
+    max-width: 100%;
+    flex: 31%;    
+    margin-bottom: 35px;
+}
+
+.service .service-item .service-item-inner {    
+    text-align: center;
+    border: 1px solid var(--bg-black-50);
+    border-radius: 10px;
+    background-color: var(--bg-black-100);
+    padding: 30px 15px;
+    transition: all 0.3s ease-in-out;
+}
+
+.service .service-item .service-item-inner:hover{
+    box-shadow: 0 0 20px rgba(40, 40, 75, 0.10);
+}
+
+.service .service-item .service-item-inner .icon {
+    height: 60px;
+    width: 60px;            
+    margin: 0 auto 30px;    
+    border-radius: 50%;
+    text-align: center;
+}
+
+.service .service-item .service-item-inner:hover .icon {
+    background: var(--skin-color);
+}
+
+.service .service-item .service-item-inner .icon .fa {
+    font-size: 35px;
+    line-height: 60px;
+    color: var(--skin-color);
+    transition: all 0.4s ease-in-out;
+}
+
+.service .service-item .service-item-inner:hover .icon .fa {
+    color: #ffffff;    
+    font-size: 25px;
+}
+
+.service .service-item .service-item-inner h4 {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--text-black-900);
+    text-transform: capitalize;
+    margin-bottom: 10px;
+}
+
+.service .service-item .service-item-inner h4 p {
+    font-size: 12px;
+    color: var(--text-black-700);
+    line-height: 25px;
+}
+
+
