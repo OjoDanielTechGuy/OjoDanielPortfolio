@@ -84,7 +84,7 @@ h3.my-profession .typing {
     white-space: nowrap;
     border: none;
     transition: all 0.3s ease;
-    background: var(--skin-color);    
+    background: var(--skin-color);
 }
 
 .btn:hover {

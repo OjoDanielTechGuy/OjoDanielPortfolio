@@ -1,0 +1,47 @@
+@media (max-width: 1200px) {
+
+    .aside {
+        left: -270px;
+    }
+
+    .main-content {
+        padding: 0;
+    }
+
+    .about-me-content .profile .row .profile-info p span {
+        display: block;
+        /* margin-left: 0; */
+    }
+}
+
+@media (max-width: 990px) {
+
+    .home .home-info {
+        flex: 100%;
+        max-width: 100%;
+    }
+
+    .home .home-img {
+        display: none;
+    }
+
+
+    .service .service-item,
+    .portfolio .portfolio-item,
+    .contact .contact-info-item {
+        flex: 50%;
+        max-width: 50%;
+    }
+    
+}
+
+@media (max-width: 790px) {
+
+    .about-me-content .profile,
+    .about-me-content .skills,
+    .about-me-content .education,
+    .about-me-content .experience{
+        flex: 100%;
+        max-width: 100%;
+    }
+}
