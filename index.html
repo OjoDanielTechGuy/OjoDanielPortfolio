@@ -29,7 +29,7 @@
         <!--Aside Start-->
         <div class="aside">
             <div class="logo">
-                <a href="#"><span>O</span>jo</a>
+                <a href="#home"><span>O</span>jo</a>
             </div>
 
             <div class="nav-toggler">
@@ -38,11 +38,11 @@
 
             <!--Aside Navigation-->
             <ul class="nav">
-                <li><a href="#" class="active"><i class="fa fa-home"></i> Home</a></li>
-                <li><a href="#"><i class="fa fa-user"></i> About</a></li>
-                <li><a href="#"><i class="fa fa-list"></i> Services</a></li>
-                <li><a href="#"><i class="fa fa-briefcase"></i> Portfolio</a></li>                
-                <li><a href="#"><i class="fa fa-comments"></i> Contact</a></li>
+                <li><a href="#home" id ="home-sel" class="active-home" onclick="changeColor(this)"><i class="fa fa-home"></i>Home</a></li>
+                <li><a href="#about" id="about-sel"class="active" onclick="changeColor(this)"><i class="fa fa-user"></i> About</a></li>
+                <li><a href="#services" id="service-sel" class="active" onclick="changeColor(this)"><i class="fa fa-list"></i> Services</a></li>
+                <li><a href="#portfolio" id="portfolio-sel" class="active" onclick="changeColor(this)"><i class="fa fa-briefcase"></i> Portfolio</a></li>                
+                <li><a href="#contact" id="contact-sel" class="active" onclick="changeColor(this)"><i class="fa fa-comments"></i> Contact</a></li>
             </ul>
         </div>
 
@@ -52,7 +52,7 @@
         <div class="main-content">
 
             <!--Home Section Start-->
-            <section class="home section">
+            <section class="home section" id="home">
                 <div class="container">
                     <div class="row">
                         <div class="home-info space-15">
@@ -77,7 +77,7 @@
             <!--Home Section End-->
 
             <!-- === About Section Start === -->
-            <section class="about section">
+            <section class="about section" id="about">
                 <div class="container">
                     <div class="row">
                         <div class="section-title space-15">
@@ -264,6 +264,16 @@
                                                 <div class="skill-percent">70%</div>
                                             </div>
                                         </div>
+
+                                        <div class="skill-list space-15">
+                                            <h4>ChatGPT-3</h4>
+                                            <div class="progress">
+                                                <div class="progress-in" style="width: 60%"></div>
+                                                <div class="skill-percent">60%</div>
+                                            </div>
+                                        </div>
+
+                                        
           
           
                                     </div>
@@ -476,7 +486,7 @@
             <!-- === About Section End === -->
 
             <!-- === Services Section Start === -->
-            <section class="service section">
+            <section class="service section" id="services">
                 <div class="container">
                     <div class="row">
                         <div class="section-title space-15">
@@ -510,7 +520,7 @@
                             <h4>Digital Marketing</h4>
                             <p>Focuses on Increasing Business Sales
                                 <hr> - Promotion of brands to connect with potential customers
-                                using the internet and form of digital communication. </p>
+                                using the internet and a form of digital communication. </p>
                         </div>                        
                     </div> 
 
@@ -550,7 +560,7 @@
                             </div>
                             <h4>UI/UX</h4>
                             <p>Creating a connection between the user and the service provider.<hr>
-                                - Improve customer satisfaction, also improve user interaction </p>
+                                - Improve customer satisfaction, also improving user interaction </p>
                         </div>
                     </div>                    
 
@@ -577,7 +587,7 @@
             <!-- === Services Section End === -->
 
             <!-- === Portfolio Section Start === -->
-            <section class="portfolio section">
+            <section class="portfolio section" id="portfolio">
                 <div class="container">
                     <div class="row">
                         <div class="section-title space-15">
@@ -587,26 +597,99 @@
 
                     <div class="row">
                         <div class="portfolio-heading space-15">
-                            <h2>My Last Projects: </h2>
+                            <h2>My Last Projects:</h2>
                         </div>
                     </div>
 
                     <div class="row">
                         <!-- === Portfolio Item List 1 === -->
                         <div class="portfolio-item space-15">
-                            <div class="portfolio-item-inner shadow-dark">
+                            <div class="portfolio-item-inner box-shadow">
                                 <div class="portfolio-img">
-                                    <img src="#" alt="">
+                                    <a href="https://testnets.opensea.io/assets/goerli/0x59e50197131e3871bb87244b39baf1f5184b99c4/1" 
+                                    target="_blank">
+                                        <img src="images/elonnft_minted.png" width="105%" alt="Minted NFT of Elon Musk">
+                                    </a>
+                                    <p>
+                                        <a href="https://github.com/OjoDanielTechGuy/ElonMuskMintNFT" target="_blank">
+                                        ElonMusk Minted NFT: <br> Github Link to Project</a>
+                                    </p>
                                 </div>
                             </div>
                         </div>
+
+                        <!-- === Portfolio Item List 2 === -->
+                        <div class="portfolio-item space-15">
+                            <div class="portfolio-item-inner box-shadow">
+                                <div class="portfolio-img">
+                                    <a href="https://ojodanieltechguy.github.io/zurilandingpage.github.io/" target="_blank">
+                                        <img src="images/zuri_web.png" width="110%" alt="Zuri Web Page">
+                                    </a>
+                                    <p><a href="https://github.com/OjoDanielTechGuy/zurilandingpage.github.io" target="_blank">
+                                        Zuri Landing Page: <br> Github Link to Project</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- === Portfolio Item List 3 === -->
+                        <div class="portfolio-item space-15">
+                            <div class="portfolio-item-inner box-shadow">
+                                <div class="portfolio-img">
+                                    <a href="https://github.com/OjoDanielTechGuy/AddMetaMuskButtonToReactApp" target="_blank">
+                                        <img src="images/connect_metamask.png" width="110%" alt="Connect to Metamask">
+                                        MetaMask Button To ReactApp: <br>Github Link to Project</a>                                                  
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- === Portfolio Item List 4 === -->
+                        <div class="portfolio-item space-15">
+                            <div class="portfolio-item-inner box-shadow">
+                                <div class="portfolio-img">
+                                    <a href="https://ojodanieltechguy.github.io/vacationDestinationWishList.github.io/" target="_blank">
+                                        <img src="images/vacation_dest.png" width="110%" alt="Vacation Destination">
+                                    </a>
+                                    <p><a href="https://github.com/OjoDanielTechGuy/vacationDestinationWishList.github.io" target="_blank">
+                                        Vacation Destination: <br> Github Link to Project</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- === Portfolio Item List 5 === -->
+                        <div class="portfolio-item space-15">
+                            <div class="portfolio-item-inner box-shadow">
+                                <div class="portfolio-img">
+                                    <a href="https://ojodanieltechguy.github.io/ZuriResponsivenessAndMediaQuery.github.io/" target="_blank">
+                                        <img src="images/zurimq.png" width="105%" alt="Zuri Media Responsiveness Web Page">
+                                    </a>
+                                    <p><a href="https://github.com/OjoDanielTechGuy/ZuriResponsivenessAndMediaQuery.github.io">
+                                        Zuri Resonsiveness Media Query: Github Link to Project</a>                                        
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="portfolio-item space-15">
+                            <div class="portfolio-item-inner box-shadow">
+                                <div class="portfolio-img">
+                                    <a href="https://github.com/OjoDanielTechGuy/WebDesigns/tree/main/YOUTUBE-CLONE" target="_blank">
+                                        <img src="images/youtube-clone.png" width="105%" alt="Zuri Media Responsiveness Web Page">
+                                        Youtube Clone: Github Link to Project</a>                                    
+                                </div>
+                            </div>
+                        </div>
+
+
+
                     </div>
                 </div>
             </section>
             <!-- === Portfolio Section End === -->
 
             <!-- === Contact Section Start === -->
-            <section class="contact section">
+            <section class="contact section" id="contact">
                 <div class="container">
                     <div class="row">
                         <div class="section-title space-15">
@@ -653,6 +736,7 @@
                     <h4 class="contact-sub-title space-15">I WILL RESPOND SWIFTLY TO YOUR MESSAGES</h4>
 
                     <!--=== Contact Form ===-->
+                    <form action="">
                     <div class="row">
                         <div class="contact-form space-15">
                             <div class="row">
@@ -700,6 +784,7 @@
                                 </div>   
                             </div>
                         </div>
+                    </form>
                     </div>
                     <!--=== Contact Form ===-->
 
@@ -715,7 +800,10 @@
     <!--MAIN CONTAINER END-->
 
     <!--JVASCRIPT FILES LINK-->
-    <script src="js/script.js"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js" referrerpolicy="no-referrer"></script>
+    <script src="js/script.js"></script>    
+    
 </body>
 
 </html>

@@ -37,6 +37,7 @@
 .aside .logo a span {
     font-family: 'Clicker Script', cursive;
     font-size: 40px;
+    color: var(--skin-color);
 }
 
 .aside .logo a::before {
@@ -126,10 +127,14 @@ ul {
     padding: 5px 15px;
 }
 
-.aside .nav li a.active {
-    color: var(--skin-color);
+.aside .nav li a.active-home{
+    color: var(--skin-color); 
 }
 
 .aside .nav li a i {
     margin-right: 10px;
 }
+
+/* .selected {
+    color: var(--skin-color);
+} */
