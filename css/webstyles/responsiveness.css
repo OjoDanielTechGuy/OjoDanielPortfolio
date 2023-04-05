@@ -25,7 +25,6 @@
         display: none;
     }
 
-
     .service .service-item,
     .portfolio .portfolio-item,
     .contact .contact-info-item {
@@ -49,3 +48,21 @@
         max-width: 100%;
     }
 }
+
+@media (max-width: 430px ) {
+ 
+   .about-me-content .profile .btn {        
+        margin: 10px;
+    }
+}
+
+@media (max-width: 390px) {
+ 
+    .about-me-content .profile .profile-info p{
+        text-align: center;
+        
+    }
+    /* .about-me-content .profile .btn {        
+         margin: 10px;
+     } */
+ }
