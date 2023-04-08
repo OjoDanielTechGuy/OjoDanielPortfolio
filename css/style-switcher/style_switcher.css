@@ -1,19 +1,20 @@
 .style-switcher {
+    
     position: fixed;
-    right: 0;
     top: 20px;
+    right: 0;
     padding: 15px;
     width: 190px;
-    background: var(--bg-black-100);
     border: 1px solid var(--bg-black-50);
     border-radius: 5px;
-    transition: all 0.3s ease;
+    background: var(--bg-black-100);
+    transition: all 0.3 ease;
     transform: translateX(100%);
-    z-index: 101;    
+    z-index: 101;
 }
 
-.style-switcher .open {
-    transform: translateX(-25%);
+.style-switcher.open {
+    transform: translateX(-10%);
 }
 
 .style-switcher .s-icon {
@@ -23,31 +24,27 @@
     width: 40px;
     text-align: center;
     font-size: 18px;
-    background: var(--bg-black-100);
-    color: var(--text-black-900);
     border: 1px solid var(--bg-black-50);
     border-radius: 50%;
-    margin-right: 20px;    
-    transition: all 0.3s ease;
+    color: var(--text-black-900);
+    background: var(--bg-black-100);
+    margin-right: 20px;
+    transition: all 0.3 ease;
     cursor: pointer;
 }
 
 .style-switcher .s-icon i {
-    line-height: 40px;    
-}
-
-.style-switcher .style-switcher-toggler {
-    top: 0;
+    line-height: 40px;
 }
 
 .style-switcher .day-night {
     top: 60px;
 }
 
-.style-switcher h4 {
-    margin: 0 0 10px;    
+.style-switcher h4{
     font-size: 16px;
     font-weight: 600;
+    margin: 0 0 10px;
     color: var(--text-black-700);
     text-transform: capitalize;
 }
@@ -68,4 +65,28 @@
 
 .style-switcher .colors .color-1 {
     background-color: #ec1839;
+}
+
+.style-switcher .colors .color-2 {
+    background-color: #f7a714;
+}
+
+.style-switcher .colors .color-3 {
+    background-color: #06a70e;
+}
+
+.style-switcher .colors .color-4 {
+    background-color: #1d0781;
+}
+
+.style-switcher .colors .color-5 {
+    background-color: #c409ba;
+} 
+
+.style-switcher .colors .color-1,
+.style-switcher .colors .color-2,
+.style-switcher .colors .color-3,
+.style-switcher .colors .color-4,
+.style-switcher .colors .color-5 {
+    cursor: pointer;
 }
