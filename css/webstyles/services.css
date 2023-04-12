@@ -51,15 +51,14 @@
     margin-bottom: 10px;
 }
 
-.service .service-item .service-item-inner h4 p {
-    font-size: 12px;
-    color: var(--text-black-700);
+/* .service .service-item .service-item-inner h4 p{
+    font-size: 14px;
+    color: var(--text-black-900);
     line-height: 25px;
-}
+} */
 
 hr{
-
-    background-color: var(--skin-color);
+    background-color: red;
     height: 2px;
     border: none;
     border-radius: 5px;

@@ -59,6 +59,8 @@ contact.addEventListener('click', function onClick(event){
     portfolio.style.color = "#302e4d"
 })
 
+
+
 var typed = new Typed(".typing", {
     strings:["", "Web Designer", "Graphics Designer", "Smart Contract Developer", "Social Media Manager", "Digital Marketer"],
     typeSpeed: 100,

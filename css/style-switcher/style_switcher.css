@@ -88,5 +88,7 @@
 .style-switcher .colors .color-3,
 .style-switcher .colors .color-4,
 .style-switcher .colors .color-5 {
+
     cursor: pointer;
+    
 }
