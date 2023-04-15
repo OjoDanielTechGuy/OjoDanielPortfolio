@@ -75,6 +75,7 @@ h3.my-profession .typing {
 }
 
 .btn {
+
     font-size: 16px;
     font-weight: 500;
     padding: 12px 35px;
@@ -85,6 +86,7 @@ h3.my-profession .typing {
     border: none;
     transition: all 0.3s ease;
     background: var(--skin-color);
+    
 }
 
 .btn:hover {

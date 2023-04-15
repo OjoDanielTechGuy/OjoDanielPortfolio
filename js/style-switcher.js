@@ -19,22 +19,22 @@ window.addEventListener("scroll", () => {
 
 /** ==== THEME SELECTION === */
 
-const altStyles = document.getElementsByClassName(".alternate-style");
+// const altStyles = document.getElementsByClassName(".alternate-style");
 
-altStyles.addEventListener("click", function setActiveStyle(event) {
+// altStyles.addEventListener("click", function setActiveStyle(event) {
 
-    altStyles.forEach((styles) => {
+//     altStyles.forEach((styles) => {
 
-        if(event == styles.getAttributes("title")) {
+//         if(event == styles.getAttributes("title")) {
 
-            styles.removeAttributes("disabled");
-        }
-        else {
-            styles.setAttributes("disabled", "true");
-        }
-    })
+//             styles.removeAttributes("disabled");
+//         }
+//         else {
+//             styles.setAttributes("disabled", "true");
+//         }
+//     })
     
-})
+// })
 
 /**=== THEME SECTION OF BLACK AND WHITE (SUN AND MOON) === */
 
@@ -42,18 +42,19 @@ const dayNight = document.querySelector(".day-night");
 
 dayNight.addEventListener("click", () => {
 
-    document.querySelector(".day-night").setAttribute("disabled");    
+    document.querySelector(".f-m").classList.toggle("fa-sun");
+    document.querySelector(".f-m").classList.toggle("fa-moon");
     
-    // document.body.classList.toogle("dark");
+    document.body.classList.toggle("dark");
 })
 
-// window.addEventListener("load", () => {
-    
-//     if(document.body.classList.toggle.contains("dark")) {
+window.addEventListener("load", () => {
 
-//         dayNight.querySelector("i").classList.add("fa-sun");
-//     }
-//     else {
-//         dayNight.querySelector("i").classList.add("fa-moon"); 
-//     }
-// })
+    if (document.body.classList.contains("dark")) {
+
+        dayNight.querySelector(".f-m").classList.add("fa-sun");
+    }
+    else {
+        dayNight.querySelector(".f-m").classList.add("fa-moon"); 
+    }
+})

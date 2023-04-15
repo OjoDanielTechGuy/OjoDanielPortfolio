@@ -102,6 +102,9 @@
   font-weight: 400;
 }
 
+.profile .profile-info span a:hover {
+  color: var(--skin-color);
+}
 .profile .buttons {
   margin-top: 30px;
 }

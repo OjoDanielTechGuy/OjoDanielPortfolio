@@ -37,6 +37,10 @@
     display: block;
 }
 
+.portfolio .portfolio-item-inner .portfolio-img a:hover{
+    color: var(--skin-color);
+}
+
 .box-shadow:hover {
     box-shadow: 0 0 20px rgba(45, 40, 75, 0.15);
 }

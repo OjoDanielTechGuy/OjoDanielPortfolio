@@ -7,7 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
 
+    <!--script links-->
     
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/4.0.9/scrollreveal.min.js" referrerpolicy="no-referrer"></script>    
+
     <!--CSS STYLES-->
     <link rel="stylesheet" href="css/root.css">
     <link rel="stylesheet" href="css/webstyles/home.css">
@@ -19,7 +22,8 @@
     <link rel="stylesheet" href="css/webstyles/responsiveness.css">    
     <link rel="stylesheet" href="css/style-switcher/style_switcher.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
-    <link rel="stylesheet" href="css/skins/color-1.css">
+    <link rel="stylesheet" href="css/skins/color-1.css">    
+    <link rel="stylesheet" href="css/skins/color-6.css">    
 
     <!--Style Switcher-->
     <link rel="stylesheet" href="css/skins/color-1.css" class="alternate-style" title="color-1" disabled>
@@ -47,7 +51,7 @@
             <!--Aside Navigation-->
             <ul class="nav">
                 <li><a href="#home" id ="home-sel" class="active-home" onclick="changeColor(this)"><i class="fa fa-home"></i>Home</a></li>
-                <li><a href="#about" id="about-sel"class="active" onclick="changeColor(this)"><i class="fa fa-user"></i> About</a></li>
+                <li><a href="#about" id="about-sel" class="active" onclick="changeColor(this)"><i class="fa fa-user"></i> About</a></li>
                 <li><a href="#services" id="service-sel" class="active" onclick="changeColor(this)"><i class="fa fa-list"></i> Services</a></li>
                 <li><a href="#portfolio" id="portfolio-sel" class="active" onclick="changeColor(this)"><i class="fa fa-briefcase"></i> Portfolio</a></li>                
                 <li><a href="#contact" id="contact-sel" class="active" onclick="changeColor(this)"><i class="fa fa-comments"></i> Contact</a></li>
@@ -76,7 +80,7 @@
                         </div>
                                                 
                         <div class="home-img space-15">
-                            <img src="images/my-image.jpg" alt="MyProfileImage">
+                            <img class="d-p" src="images/my-image.jpg" alt="MyProfileImage">
                         </div>
                     </div>
                 </div>
@@ -95,9 +99,9 @@
                         <div class="about-me-content space-15">
                             <div class="row">
                                 <div class="about-me-text space-15">
-                                    <h3>I am Daniel Ojo a <span>Solidity Developer</span></h3>
+                                    <h3 class="ab-m">I am Daniel Ojo a <span>Solidity Developer</span></h3>
 
-                                    <p class="p-1">I am skilled in programming smart contracts on the Ethereum
+                                    <p class="p-1 ab-m">I am skilled in programming smart contracts on the Ethereum
                                         blockchain.
                                         I have a deep understanding of the Solidity programming language, it's syntax,
                                         and it's features. I am familiar with the development tools and frameworks that
@@ -105,14 +109,14 @@
                                         Ganache.
                                     </p>
 
-                                    <p class="p-2">I have knowledge about the Ethereum Virtual Machine (EVM) and it's
+                                    <p class="p-2 ab-m">I have knowledge about the Ethereum Virtual Machine (EVM) and it's
                                         bytecode, and I know how to write efficient and optimized code that can be
                                         executed on the
                                         EVM. I am also familiar with the gas mechanism and know how to minimize gas
                                         costs to make the smart contracts more affordable for users.
                                     </p>
 
-                                    <p class="p-3">As a solidity developer, I am constantly learning and keeping
+                                    <p class="p-3 ab-m">As a solidity developer, I am constantly learning and keeping
                                         up-to-date with the latest developments in the Ethereum ecosystem.
                                         I have experience in designing and implementing complex smart
                                         contracts that can handle various business logic and interact with other smart
@@ -123,7 +127,7 @@
                                         conditions.
                                     </p>
 
-                                    <p class="p-4">Overall, I am a skilled and dedicated solidity developer who is
+                                    <p class="p-4 ab-m">Overall, I am a skilled and dedicated solidity developer who is
                                         passionate about building decentralized applications that can transform
                                         industries and
                                         improve people's lives.
@@ -134,7 +138,7 @@
                             <div class="row">
                                 <div class="profile space-15">
                                     <h3 class="title">Profile</h3>
-                                    <div class="row">
+                                    <div class="row p-i">
                                         <div class="profile-info space-15">
                                             <p>Email: <span>danielbankole33@yahoo.com</span></p>
                                         </div>
@@ -183,7 +187,7 @@
 
                                 <!--SKILL SECTION-->
                                 <div class="skills space-15">
-                                    <div class="row">
+                                    <div class="row s-l">
                                         <!--Skill 1-->
                                         <h3 class="title">Skills</h3>
                                         <div class="skill-list space-15">
@@ -276,10 +280,10 @@
                                         </div>
 
                                         <div class="skill-list space-15">
-                                            <h4>ChatGPT-3</h4>
+                                            <h4>ChatGPT</h4>
                                             <div class="progress">
-                                                <div class="progress-in" style="width: 70%"></div>
-                                                <div class="skill-percent">70%</div>
+                                                <div class="progress-in" style="width: 60%"></div>
+                                                <div class="skill-percent">60%</div>
                                             </div>
                                         </div>
 
@@ -294,7 +298,7 @@
                             <div class="row">
                                 <div class="education space-15">
                                     <h3 class="title">Education</h3>
-                                    <div class="row">
+                                    <div class="row edu">
                                         <div class="e-info-box space-15">
                                             <div class="e-info dark-box-shadow">
                                                 <!-- Education List-->
@@ -393,7 +397,7 @@
 
                                 <div class="experience space-15">
                                     <h3 class="title">Experience</h3>
-                                    <div class="row">
+                                    <div class="row exp">
                                         <div class="e-info-box space-15">
                                             <div class="e-info dark-box-shadow">
                                             
@@ -506,7 +510,7 @@
 
                     <div class="row">
                     <!-- Services Item Listing Start 1-->
-                    <div class="service-item space-15">
+                    <div class="service-item space-15 wid">
                         <div class="service-item-inner">
                             <div class="icon">
                                 <i class="fa fa-mobile-alt"></i>
@@ -514,7 +518,8 @@
                             <h4 class="title">App Development</h4>
                             <p>
                                 Provision of specific development stages as well as creating a full-cycle
-                                mobile app implentation. <hr>- Custom iOS and Android app development.
+                                mobile app implentation.<br>__________________________<br>
+                                - Custom iOS and Android app development.
                             </p>
                             
 
@@ -522,67 +527,70 @@
                     </div>
 
                     <!-- Services Item Listing Start 2-->
-                    <div class="service-item space-15">
+                    <div class="service-item space-15 wid">
                         <div class="service-item-inner">
                             <div class="icon">
                                 <i class="fa fa-bullhorn"></i>                                                                                                                                                                                                                                                  
                             </div>
-                            <h4>Digital Marketing</h4>
+                            <h4 class="title">Digital Marketing</h4>
                             <p>Focuses on Increasing Business Sales
-                                <hr> - Promotion of brands to connect with potential customers
+                                <br>__________________________<br>
+                                - Promotion of brands to connect with potential customers
                                 using the internet and a form of digital communication. </p>
                         </div>                        
                     </div> 
 
                     <!-- Services Item Listing Start 3-->
-                    <div class="service-item space-15">
+                    <div class="service-item space-15 wid">
                         <div class="service-item-inner">
                             <div class="icon">
                                 <i class="fa fa-search"></i>                                                                                                                                                                                                                                                  
                             </div>
-                            <h4>Social Media Management</h4>
+                            <h4 class="title">Social Media Management</h4>
                             <p>Covers planning, crafting and publishing content on social platforms
-                                <hr> - It involves regular social profile audits and audience research,
+                                <br>__________________________<br> 
+                                - It involves regular social profile audits and audience research,
                                 which are essential to rolling out relevant content.
                             </p>
                         </div>
                     </div> 
 
                     <!-- Services Item Listing Start 4-->
-                    <div class="service-item space-15">
+                    <div class="service-item space-15 wid2">
                         <div class="service-item-inner">
                             <div class="icon">
                                 <i class="fa fa-code"></i>                                                                                                                                                                                                                                                  
                             </div>
-                            <h4>Smart Contract Development</h4>
+                            <h4 class="title">Smart Contract Development</h4>
                             <p>Consulting, Development, Testing and blockchain deployment of 
-                                smart contract logic. <hr>
+                                smart contract logic. <br>__________________________<br>
                                 - Implementation of smart contracts to automate business processes in 
                                 Ethereum, Electro-Optical-System (EOS) or Hyperledger.</p>
                         </div>
                     </div>                    
                     
                     <!-- Services Item Listing Start 5-->
-                    <div class="service-item space-15">
+                    <div class="service-item space-15 wid2">
                         <div class="service-item-inner">
                             <div class="icon">
                                 <i class="fa fa-palette"></i>                                                                                                                                                                                                                                                  
                             </div>
-                            <h4>UI/UX</h4>
-                            <p>Creating a connection between the user and the service provider.<hr>
+                            <h4 class="title">UI/UX</h4>
+                            <p>Creating a connection between the user and the service provider.
+                                <br>__________________________<br>
                                 - Improve customer satisfaction, also improving user interaction </p>
                         </div>
                     </div>                    
 
                     <!-- Services Item Listing Start 6-->
-                    <div class="service-item space-15">
+                    <div class="service-item space-15 wid2">
                         <div class="service-item-inner">
                             <div class="icon">
                                 <i class="fa fa-laptop-code"></i>                                                                                                                                                                                                                                                  
                             </div>
-                            <h4>Website Development</h4>
+                            <h4 class="title">Website Development</h4>
                             <p>Website Solutions that deliver tangible business results
-                                <hr>
+                                <br>__________________________<br>
                                 - Website designs and development services, from creating mobile
                                 web development solutions and responsive website designs.
                             </p>
@@ -607,13 +615,13 @@
 
                     <div class="row">
                         <div class="portfolio-heading space-15">
-                            <h2>My Last Projects:</h2>
+                            <h2 class="title">My Last Projects:</h2>
                         </div>
                     </div>
 
                     <div class="row">
                         <!-- === Portfolio Item List 1 === -->
-                        <div class="portfolio-item space-15">
+                        <div class="portfolio-item space-15 port-folio">
                             <div class="portfolio-item-inner box-shadow">
                                 <div class="portfolio-img">
                                     <a href="https://testnets.opensea.io/assets/goerli/0x59e50197131e3871bb87244b39baf1f5184b99c4/1" 
@@ -629,7 +637,7 @@
                         </div>
 
                         <!-- === Portfolio Item List 2 === -->
-                        <div class="portfolio-item space-15">
+                        <div class="portfolio-item space-15 port-folio">
                             <div class="portfolio-item-inner box-shadow">
                                 <div class="portfolio-img">
                                     <a href="https://ojodanieltechguy.github.io/zurilandingpage.github.io/" target="_blank">
@@ -643,7 +651,7 @@
                         </div>
 
                         <!-- === Portfolio Item List 3 === -->
-                        <div class="portfolio-item space-15">
+                        <div class="portfolio-item space-15 port-folio">
                             <div class="portfolio-item-inner box-shadow">
                                 <div class="portfolio-img">
                                     <a href="https://github.com/OjoDanielTechGuy/AddMetaMuskButtonToReactApp" target="_blank">
@@ -654,13 +662,13 @@
                         </div>
 
                         <!-- === Portfolio Item List 4 === -->
-                        <div class="portfolio-item space-15">
+                        <div class="portfolio-item space-15 port-folio2">
                             <div class="portfolio-item-inner box-shadow">
                                 <div class="portfolio-img">
                                     <a href="https://ojodanieltechguy.github.io/vacationDestinationWishList.github.io/" target="_blank">
                                         <img src="images/vacation_dest.png" width="110%" alt="Vacation Destination">
                                     </a>
-                                    <p><a href="https://github.com/OjoDanielTechGuy/vacationDestinationWishList.github.io" target="_blank">
+                                    <p><a class="htext" href="https://github.com/OjoDanielTechGuy/vacationDestinationWishList.github.io" target="_blank">
                                         Vacation Destination: <br> Github Link to Project</a>
                                     </p>
                                 </div>
@@ -668,7 +676,7 @@
                         </div>
 
                         <!-- === Portfolio Item List 5 === -->
-                        <div class="portfolio-item space-15">
+                        <div class="portfolio-item space-15 port-folio2">
                             <div class="portfolio-item-inner box-shadow">
                                 <div class="portfolio-img">
                                     <a href="https://ojodanieltechguy.github.io/ZuriResponsivenessAndMediaQuery.github.io/" target="_blank">
@@ -681,7 +689,7 @@
                             </div>
                         </div>
 
-                        <div class="portfolio-item space-15">
+                        <div class="portfolio-item space-15 port-folio2">
                             <div class="portfolio-item-inner box-shadow">
                                 <div class="portfolio-img">
                                     <a href="https://github.com/OjoDanielTechGuy/WebDesigns/tree/main/YOUTUBE-CLONE" target="_blank">
@@ -711,7 +719,7 @@
                     <h3 class="contact-title space-15">Do you have any questions ?</h3>
                     <h4 class="contact-sub-title space-15">I'M AT YOUR SERVICE</h4>
 
-                    <div class="row">
+                    <div class="row c-d">
                         <!-- === Contact Info Listing 1 === -->
                         <div class="contact-info-item ">
                             <div class="icon"><i class="fa fa-phone"></i></div>
@@ -758,6 +766,10 @@
                                 <input type="hidden" name="_subject" value="New Email Wooo!!">
         
                                 <!--Thank you page-->
+                                <input type="hidden" name="_next" value="./thankyou.html">
+
+                                <!--Honeypot to avoid spam-->
+                                <input type="text" name="_honey" style="display:none">
                                 
                                 
                             <div class="row">
@@ -831,17 +843,13 @@
 
     <!-- === Style Switcher Start === -->
     <div class="style-switcher">
-        <!-- <div class="style-switcher-toggler s-icon">             -->
+        <!-- <div class="style-switcher-toggler s-icon">-->
         <div class="s-icon">            
             <i class="fas fa-cog fa-spin"></i>            
         </div>
 
-        <div class="day-night s-icon" id="d-n">
-            <i class="fas fa-moon"></i>            
-        </div>
-
-        <div class="day-sun s-icon" hidden>
-            <i class="fas fa-sun"></i>            
+        <div class="day-night s-icon">
+            <i class="fas fa-moon f-m"></i>                
         </div>
 
         <h4>Theme Colors</h4>
@@ -855,13 +863,11 @@
     </div>
     <!-- === Style Switcher End === -->
 
-
     <!-- JVASCRIPT FILES LINK -->
-    
+    <script src="js/style-switcher.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js" referrerpolicy="no-referrer"></script>
     <script src="js/script.js"></script>
-    <script src="js/style-switcher.js"></script>
-    
+
 </body>
 
 </html>

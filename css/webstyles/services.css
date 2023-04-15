@@ -6,16 +6,18 @@
     margin-bottom: 35px;
 }
 
-.service .service-item .service-item-inner {    
+.service .service-item .service-item-inner {
+
     text-align: center;
     border: 1px solid var(--bg-black-50);
     border-radius: 10px;
     background-color: var(--bg-black-100);
     padding: 30px 15px;
     transition: all 0.3s ease-in-out;
+    
 }
 
-.service .service-item .service-item-inner:hover{
+.service .service-item .service-item-inner:hover {
     box-shadow: 0 0 20px rgba(40, 40, 75, 0.10);
 }
 
@@ -51,18 +53,11 @@
     margin-bottom: 10px;
 }
 
-/* .service .service-item .service-item-inner h4 p{
-    font-size: 14px;
+.service .service-item .service-item-inner p {
+    font-size: 16px;
     color: var(--text-black-900);
     line-height: 25px;
-} */
-
-hr{
-    background-color: red;
-    height: 2px;
-    border: none;
-    border-radius: 5px;
-    margin: 10px;
+    font-weight: 500;
+    
 }
-
 
